@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">♥Charity</string>
+    <string name="event">Event</string>
+    <string name="info">Info</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=myMap</string>
+</resources>

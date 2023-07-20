@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "864760783100",
+    "project_id": "sudip-new-project",
+    "storage_bucket": "sudip-new-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864760783100:android:6632fccc7d73913677f779",
+        "android_client_info": {
+          "package_name": "com.example.sudip_new_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864760783100-g559vl65f8c826kp25qom0sir4dkn2m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh5-Kxv-jXvI__cdzy62iaC4slsjXK4UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864760783100-g559vl65f8c826kp25qom0sir4dkn2m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
