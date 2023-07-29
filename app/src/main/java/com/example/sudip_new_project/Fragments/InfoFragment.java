@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -69,9 +71,19 @@ public class InfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info, container, false);
-    }
+        View view= inflater.inflate(R.layout.fragment_info, container, false);
+        WebView web_donate=view.findViewById(R.id.donate);
+        web_donate.loadUrl("https://sudipbhanja123.github.io/Crowd_Caring/donate.html");
 
+        // this will enable the javascript.
+        web_donate.getSettings().setJavaScriptEnabled(true);
+
+        // WebViewClient allows you to handle
+        // onPageFinished and override Url loading.
+        web_donate.setWebViewClient(new WebViewClient());
+        return view;
+    }
+/*
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -147,7 +159,7 @@ public class InfoFragment extends Fragment {
                 dialog.show();
             }
         });
-    }
+    }*/
 
 
 }

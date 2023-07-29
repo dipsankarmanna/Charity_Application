@@ -8,7 +8,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.sudip_new_project.Fragments.AboutFragment;
+import com.example.sudip_new_project.Fragments.ContactFragment;
 import com.example.sudip_new_project.Fragments.GMapsFragment;
+import com.example.sudip_new_project.Fragments.HomeFragment;
 import com.example.sudip_new_project.Fragments.InfoFragment;
 import com.example.sudip_new_project.Fragments.MapFragment;
 import com.example.sudip_new_project.databinding.ActivityMainBinding;
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, new GMapsFragment());
+        transaction.replace(R.id.container, new HomeFragment());
         transaction.commit();
 
         binding.readableBottomBar.setOnItemSelectListener(new ReadableBottomBar.ItemSelectListener() {
@@ -41,10 +44,16 @@ public class MainActivity extends AppCompatActivity {
         transaction = getSupportFragmentManager().beginTransaction();
         switch (i) {
             case 0:
-                transaction.replace(R.id.container, new GMapsFragment());
+                transaction.replace(R.id.container, new HomeFragment());
                 break;
             case 1:
                 transaction.replace(R.id.container, new InfoFragment());
+                break;
+            case 2:
+                transaction.replace(R.id.container, new AboutFragment());
+                break;
+            case 3:
+                transaction.replace(R.id.container, new ContactFragment());
                 break;
         }
         transaction.commit();

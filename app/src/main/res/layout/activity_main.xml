@@ -26,8 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:rbb_tabs="@xml/tabs"
         app:rbb_activeItemType="text"
-        app:rbb_textColor="@color/orange"
-        app:rbb_backgroundColor="@color/green"
+        app:rbb_textColor="@color/white"
+        app:rbb_backgroundColor="#2196F3"
         app:rbb_indicatorColor="@color/orange" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
